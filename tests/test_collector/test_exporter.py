@@ -57,6 +57,7 @@ def test_sera_validado_exportar_arquivo_com_sucesso():
     filename = "export_correct.csv"
     with open(filename) as f:
         content = f.readlines()
+    print(*file_csv_file, sep="\n")
     assert content == file_csv_file
 
 
